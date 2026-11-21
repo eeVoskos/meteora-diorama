@@ -1,0 +1,9 @@
+// Cloudflare Workers, static assets only (no Worker script). Nothing here deploys by itself:
+//   python3 -I tools/build_site.py && npx wrangler deploy
+// dist/ includes private/, the measured model derived from Google imagery: deploying makes it public.
+// The account is not set here on purpose. Wrangler asks which one to use, or set CLOUDFLARE_ACCOUNT_ID.
+{
+  "name": "meteora-diorama",
+  "compatibility_date": "2026-11-21",
+  "assets": { "directory": "./dist" }
+}

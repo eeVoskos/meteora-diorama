@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+
+# The measured model, derived from Google Solar API data with your own key (tools/build_google.py).
+# Not in the repository: rebuild it locally. It is copied into dist/ when you deploy.
+private/
+
+# Downloaded inputs and intermediates, re-creatable with tools/ (hundreds of MB).
+# The pinned OpenStreetMap snapshot is the one exception: it cannot be fetched again identically.
+cache/*
+!cache/osm/
+cache/osm/*
+!cache/osm/raw.json
+
+# Reference photos (personal and third-party images)
+docs/reference/photos/
+
+# Working notes, caches and local settings of coding agents
+.superpowers/
+.impeccable/
+.claude/
+
+# OS and editor files
+.DS_Store
+.idea/
+
+# Python bytecode
+__pycache__/
+
+# Deployment: assembled site and Wrangler state
+dist/
+.wrangler/
