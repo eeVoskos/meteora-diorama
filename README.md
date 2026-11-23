@@ -4,7 +4,7 @@ A 3D model of Kalampaka, Kastraki and the Meteora rocks in Thessaly, Greece, tha
 
 ![The Meteora rocks above Kalampaka at dusk, drawn by the page](docs/render.jpg)
 
-Live demo: https://meteora-diorama.stheo.dev/
+Live demo: https://meteora-diorama.stheo.dev
 
 It is a static page: plain HTML and JavaScript modules, with [three.js](https://threejs.org) loaded from a CDN.
 There is no build step and nothing to install. The tools that prepare the data use only the Python standard
